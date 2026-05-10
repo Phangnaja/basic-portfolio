@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eakaphong Phang | Vibram Certified Cobbler</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="theme-toggle" aria-label="Toggle light/dark theme">🌙</button>
+        <h1>Eakaphong Phang</h1>
+        <p class="subtitle">Vibram Certified Cobbler</p>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>High-quality Vibram sole replacement for hiking boots.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Restoration of vintage leather dress shoes.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Custom modification for mountain trekking footwear.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +66 XXX XXX XXX</p>
+        </section>
+    </main>
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            toggleBtn.textContent = document.body.classList.contains('light-theme') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
